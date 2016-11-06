@@ -12,6 +12,8 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <script src="assets/js/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.css">
 	</head>
 	<body>
 
@@ -32,8 +34,10 @@
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-snapchat"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.facebook.com/groups/435913699949471/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li onclick="snapchat()"><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+                        <li><a href="https://www.reddit.com/r/osumpc/" class="icon fa-reddit"><span class="label">Reddit</span></a></li>
+                        <li><a href="https://soundcloud.com/user-852276152" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
 						<li><a href="#four" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
@@ -500,5 +504,15 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+            <script>
+        
+                function snapchat(){
+                swal({
+                  title: "Follow us at:",
+                  text: "osumpc",
+                imageUrl: "images/snapchat.jpg"
+                });
+                }
+            </script>
 	</body>
 </html>
